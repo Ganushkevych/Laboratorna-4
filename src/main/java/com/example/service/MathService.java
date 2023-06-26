@@ -1,10 +1,11 @@
 package com.example.service;
 
 import com.example.exceptions.WrongValueException;
-import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-@Service
+//Даний клас відноситься до сервісного шару(2) та містить математичну модель
+
+//Прибрав анотацію сервіс, бо запускаю сервісний шар в контролері самостійно
 public class MathService {
     private final BigDecimal a;
     private final BigDecimal b;
@@ -33,4 +34,3 @@ public class MathService {
         return BigDecimal.valueOf(1);
     }
 }
-
